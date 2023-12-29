@@ -15,4 +15,21 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: [
+        "**/*.test.ts",
+        "**/*.test.tsx",
+      ],
+      env: {
+        "jest": true
+      }
+    },
+    {
+      files: ['**/*.js', '**/*.cjs'],
+      env: {
+        node: true,
+      },
+    }
+  ]
 }

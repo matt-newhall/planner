@@ -25,3 +25,6 @@ dist-ssr
 
 # Transpiled code
 apps/backend/index.js
+
+# Testing
+.jest
