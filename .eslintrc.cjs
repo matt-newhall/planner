@@ -5,6 +5,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -30,6 +31,12 @@ module.exports = {
       env: {
         node: true,
       },
+    },
+    {
+      files: ['*.config.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 0,
+      }
     }
   ]
 }
