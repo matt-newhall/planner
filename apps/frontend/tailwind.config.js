@@ -1,34 +1,34 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors');
 
 export default {
-  content: [
-    './**/*.{html,ts,tsx,css}',
-  ],
+  content: ["./apps/frontend/**/*.{html,ts,tsx,css}"],
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        cobeHeavy: ['CobeHeavy', 'sans-serif'],
-        cobeSemiBold: ['CobeSembiBold', 'sans-serif'],
-        lato: ['Lato', 'sans-serif'],
+        helvetica: ["Helvetica", "sans-serif"],
+        arial: ["Arial", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
       colors: {
-        ...colors,
-        'light-hover': '#61dafbaa',
-        'dark-hover': '#646cffaa',
-        'grey': '#888',
-        'background': '#242424',
-        'default': '#646cff',
+        grey: "#888",
+        background: "#242424",
+        button: "#1a1a1a",
+        selected: "#2590eb",
       },
       spacing: {
-        xxs: '2px',
-        xs: '4px',
-        sm: '8px',
-        md: '16px',
-        lg: '24px',
-        xl: '40px',
-        '2xl': '400px',
+        // amend as required
+        xs: "4px",
+        sm: "8px",
+        md: "16px",
+        lg: "24px",
+        xl: "40px",
+      },
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
+      },
+      dropShadow: {
+        "logo-selected": "0 0 2em #646cffaa",
+        "logo-unselected": "0 0 0 #646cffaa",
       },
     },
   },
