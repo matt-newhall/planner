@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "description": "",
   "main": "./index.html",
@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
     "type": "tsc",
-    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "test": "jest",
     "test:all": "pnpm lint && pnpm type && pnpm test"
   },
   "keywords": [],
