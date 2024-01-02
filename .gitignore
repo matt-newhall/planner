@@ -22,7 +22,7 @@ dist-ssr
 *.sw?
 
 # Transpiled code
-apps/backend/index.js
+apps/backend/app.js
 
 # Testing
 .jest
