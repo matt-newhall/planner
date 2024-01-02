@@ -12,5 +12,6 @@
     "javascriptreact",
     "typescriptreact"
   ],
-  "prettier.configPath": ".prettierrc"
+  "prettier.configPath": ".prettierrc",
+  "jest.jestCommandLine": "pnpm run test-fe"
 }
