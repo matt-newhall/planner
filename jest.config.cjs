@@ -1,12 +1,12 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   // Jest Setup
-  preset: 'ts-jest',
-  testEnvironment: 'node',
+  preset: "ts-jest",
+  testEnvironment: "jsdom",
 
   // Coverage
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/src/features/**/use*.{js,jsx,ts,tsx}'],
+  collectCoverageFrom: ["apps/frontend/**/*.hook.{js,jsx,ts,tsx}"],
   coverageThreshold: {
     // Adjust/remove as necessary for your project
     global: {
@@ -16,12 +16,12 @@ module.exports = {
       lines: 100,
     },
   },
-  cacheDirectory: '.jest/cache',
-  coverageDirectory: '.jest/coverage',
+  cacheDirectory: ".jest/cache",
+  coverageDirectory: ".jest/coverage",
 
-  moduleFileExtensions: ['ts', 'tsx', 'json', 'node'],
-  modulePaths: ['apps'],
+  moduleFileExtensions: ["ts", "tsx", "js"],
+  moduleDirectories: ["apps/frontend/src", "node_modules"],
 
   // Not necessary, but add here if required
   // setupFiles: ['./jest/jest.setup.ts'],
-};
+}
