@@ -1,5 +1,5 @@
 import { useState } from "react"
-import reactLogo from "./assets/react.png"
+import reactLogo from "./assets/react.svg"
 import { Button } from "./atoms/Button/Button"
 import { Logo } from "./atoms/Logo/Logo"
 
