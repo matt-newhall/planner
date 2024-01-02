@@ -2,11 +2,7 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
     "moduleResolution": "bundler",
@@ -20,15 +16,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "apps/frontend"
-  ],
+  "include": ["apps/frontend"],
   "references": [
     {
       "path": "./tsconfig.vite.json"
     }
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "babel.config.js", "jest.config.cjs", "dist"]
 }
