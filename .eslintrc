@@ -12,7 +12,7 @@
   "plugins": ["react-refresh"],
   "settings": {
     "tailwindcss": {
-      "config": "apps/frontend/tailwind.config.js"
+      "config": "apps/frontend/tailwind.config.cjs"
     }
   },
   "rules": {
@@ -23,10 +23,7 @@
   },
   "overrides": [
     {
-      "files": [
-        "**/*.test.ts",
-        "**/*.test.tsx"
-      ],
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
       "env": {
         "jest": true
       }
