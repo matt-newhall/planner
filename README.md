@@ -1,13 +1,9 @@
-# LS3 Project
+# Planning App
 
 ## Project Description
 
-Barebones Fullstack Monorepo
-
-- **Frontend**: React-TS with Tailwind CSS
-- **Backend**: Express.js
-- **Compiler**: Vite
-- **Package Manager**: PNPM
+Cozy self-planner and calendar app with Google Calendar integration to manage
+your life!
 
 ## Setup
 
@@ -21,12 +17,6 @@ pnpm i
 
 ```bash
 pnpm run frontend
-```
-
-- Conversely, to start backend, run:
-
-```bash
-pnpm run backend
 ```
 
 - To test the frontend unit tests, run:

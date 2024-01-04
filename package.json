@@ -1,5 +1,5 @@
 {
-  "name": "ls3",
+  "name": "planner",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -9,7 +9,6 @@
     "preview-fe": "pnpm run -C ./apps/frontend preview",
     "test-fe": "pnpm run -C ./apps/frontend test",
     "test-fe:all": "pnpm run -C ./apps/frontend test:all",
-    "backend": "pnpm run -C ./apps/backend dev",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
     "preinstall": "npx only-allow pnpm"
   },
